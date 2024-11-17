@@ -1,0 +1,149 @@
+/*Laptop Large - 4K */
+@media (min-width:1200px) {
+    /* container for all contents */
+    .container{
+        max-width:1200px;
+    }
+
+}
+@media (max-width:1024px) {
+    /* container for all contents */
+    .container{
+        max-width:990px;
+    }
+    /* landing text */
+    .landing .text{
+        width: 100%;
+        justify-content: center;
+        padding: 10px;
+    }
+}
+/* devices smaller than tablet */
+@media (max-width:768px){
+    /* container for all contents */
+    .container{
+        max-width:750px;
+    }
+    /* toggle burger */
+    nav .toggle-menu{
+        display: block;
+    }
+    nav ul{
+        display: none;
+        width: 0px;
+    }
+    nav ul li a{
+        padding: 20px 10px;
+    }
+    nav .toggle-menu:hover + ul{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: calc(100% + 1px);
+        left: 0;
+        width: 100%;
+        background-color: rgb(0 0 0 / 50%);
+    }
+    /* landing hidden items */
+    .landing .arrow{
+        display: none;
+    }
+    /* service-content */
+    .service-content .service{
+        flex-direction: column;
+        text-align: center;
+    }
+    /* protfolio-content => boxes */
+    .portfolio-content .boxes{
+        grid-template-columns: repeat(auto-fill,minmax(50%,1fr));
+    }
+    /* design section*/
+    .design .image-wrapper{
+        display: none;
+    }
+    .design .text{
+        width: 100%;
+    }
+    /* video sction */
+    .video .text{
+        padding-block: 10px;
+        padding-inline: 5px;
+    }
+    .video .text h2{
+        font-size: 1.2em;
+    }
+    .video .text .see-more-btn{
+        font-size: 0.8em;
+    }
+    .stats .boxes {
+        gap: 20px;
+    }
+    .stats .boxes .box{
+        width:calc(50% - 20px);
+    }
+    /* testimonials-skills section */
+    .testimonials-skills .container{
+        flex-direction: column;
+        gap: 50px;
+    }
+    /* subscribe section */
+    .subscribe .container{
+        flex-direction: column;
+        gap: 50px;
+        text-align: center;
+    }
+    .subscribe .container p, .subscribe .container form{
+        width: 100%;
+    }
+}
+/* Mobile Large*/
+@media (max-width:425px){
+    /* service-content */
+    .service-content{
+        grid-template-columns: 1fr;
+    }
+    /* protfolio-content => boxes */
+    .portfolio-content .boxes{
+        grid-template-columns: 1fr;
+    }
+    /* states section */
+    .stats .boxes .box{
+        width: 100%;
+    }
+    /* testimonials-skills section */
+    .testimonials-content .testimonial{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    /* pricing plans */
+    .price-plans{
+        grid-template-columns: 1fr;
+    }
+}
+/* Mobile Meduim, Small and very small*/
+@media (max-width:375px){
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
